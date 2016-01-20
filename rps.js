@@ -1,3 +1,4 @@
+/* Rock Paper Scissors Game */ 
 var user1 = parseInt(Math.random()*10)%3;
 var user2 = parseInt(Math.random()*10)%3;
 

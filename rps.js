@@ -1,18 +1,28 @@
-/* Rock Paper Scissors Game */ 
-var user1 = parseInt(Math.random()*10)%3;
-var user2 = parseInt(Math.random()*10)%3;
+var userChoice = parseInt(Math.random()*10)%3;
+var computerChoice = parseInt(Math.random()*10)%3;
 
-  if (user1 || user2 == 0) {
-  	console.log("rock");
-  } 
-  else if(user1 || user2 == 1) {
-  	console.log("paper");
-  } 
-  else {
-  	console.log("scissors");
-  } 
-  console.log("User1: " + user1);
-  console.log("User2: " + user2); 
+if (userChoice = 0) {
+  	userChoice = "rock";
+} 
+else if(userChoice = 1) {
+  	userChoice = "paper";
+} 
+else {
+  	userChoice = "scissors";
+} 
+
+if (computerChoice == 0) {
+    computerChoice = "rock";
+} 
+else if(computerChoice == 1) {
+    computerChoice = "paper";
+} 
+else {
+    computerChoice = "scissors";
+} 
+
+console.log("User1: " + userChoice);
+console.log("User2: " + computerChoice); 
 
 var compare = function(choice1, choice2) {
     
@@ -48,5 +58,5 @@ var compare = function(choice1, choice2) {
   }
 };
 
-compare (user1, user2)
+console.log(compare(userChoice, computerChoice))
 

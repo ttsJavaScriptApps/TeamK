@@ -32,39 +32,44 @@ while (userScore < 3 && computerScore < 3) {
     console.log("Player2: " + computerChoice); 
         
     if (userChoice === computerChoice) {
-        console.log("The result is a tie!");
+        console.log("The result is a tie! No score.");
     }
         
     else if (userChoice === "rock") {
       if (computerChoice === "scissors") {
-        console.log("rock wins");
+        console.log("Player 1 wins with rock");
         userScore += 1;
       }  
       else { 
-        console.log("paper wins");
+        console.log("Player 2 wins with paper");
         computerScore += 1; 
       }
     }   
     else if(userChoice === "paper") {
       if (computerChoice === "rock") {
-         console.log("paper wins");
+         console.log("Player 1 wins with paper");
          userScore += 1;
       }
       else { 
-          console.log("scissors wins");
+          console.log("Player 2 wins with scissors");
           computerScore += 1; 
       }
     }    
     else if(userChoice === "scissors") {
       if (computerChoice === "rock"){ 
-        console.log("rock wins");
+        console.log("Player 2 wins with rock");
           computerScore += 1;
       }
       else {
-          console.log("scissors wins");
+          console.log("Player 1 wins with scissors");
           userScore += 1;
       }
     }
 
-    console.log(userScore, computerScore);
+    console.log("Player1: " + userScore, "Player 2: " + computerScore);
+
+    if (userScore == 3)
+      console.log("Player 1 wins!");
+    else
+       console.log("Player 2 wins!");
 }

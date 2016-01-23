@@ -1,2 +1,2 @@
-# RPS_JS
-Rock, Paper, Scissors game in javascript
+# JS Class (via Tech Talent South)
+Class work and homework for JS Application class Winter 2016

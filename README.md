@@ -5,5 +5,5 @@ Class 1: Variables & Flow Control
 * Rock, Paper, Scissors game
 
 Class 2: Data Structures - Objects & Arrays
-*Shopping List & Cart
-*mimick email data structure(nesting)
+* Shopping List & Cart
+* mimick email data structure(nesting)

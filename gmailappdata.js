@@ -17,9 +17,13 @@ var appData = {
         ]},
 		{name: 'draft',
 		 email: [
-		 	
+		 	{from: "hi",
+		 	subject: "what",
+		 	content: "helloooo.",
+		 	}
 		]},
 		{name: 'sent',
+		  email: []
 	    },
 	],
 
@@ -45,7 +49,8 @@ var appData = {
 //console.log(appData.mailboxes[1].email[0].content);
 
 //4 Mark an email as sent
-
+appData.mailboxes[3].email.push(appData.mailboxes[2].email.shift());
+console.log(appData.mailboxes[3]);
 
 //5 Add draft email to draft mailbox
 appData.mailboxes[2].email.push({to: "7of9", subject: "assimilation", content: "This human body is weak"}, 

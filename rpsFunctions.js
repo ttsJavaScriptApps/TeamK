@@ -1,3 +1,4 @@
+//Rock Paper Scissors game using functions
 var hands = ['rock', 'paper', 'scissors'];
 
 function getHand() {
